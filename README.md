@@ -1,4 +1,11 @@
 # eyowo-php
+[![CircleCI](https://circleci.com/gh/djunehor/eyowo-php.svg?style=svg)](https://circleci.com/gh/djunehor/eyowo-php)
+[![Latest Stable Version](https://poser.pugx.org/djunehor/eyowo-php/v/stable)](https://packagist.org/packages/djunehor/eyowo-php)
+[![Total Downloads](https://poser.pugx.org/djunehor/eyowo-php/downloads)](https://packagist.org/packages/djunehor/eyowo-php)
+[![License](https://poser.pugx.org/djunehor/eyowo-php/license)](https://packagist.org/packages/djunehor/eyowo-php)
+[![StyleCI](https://github.styleci.io/repos/224398453/shield?branch=master)](https://github.styleci.io/repos/224398453)
+[![Build Status](https://scrutinizer-ci.com/g/djunehor/eyowo-php/badges/build.png?b=master)](https://scrutinizer-ci.com/g/djunehor/eyowo-php/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/djunehor/eyowo-php/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/djunehor/eyowo-php/?branch=master)
 
 A PHP API wrapper for [Eyowo](https://eyowo.com/).
 
