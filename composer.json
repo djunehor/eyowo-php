@@ -1,0 +1,58 @@
+{
+    "name": "djunehor/eyowo-php",
+    "type": "library",
+    "description": "Helps make your Eyowo API calls giving a stdClass object.",
+    "keywords": [
+        "yabacon",
+        "eyowo-php",
+        "eyowo",
+        "plan",
+        "page",
+        "api",
+        "transaction",
+        "customer",
+        "subscription",
+        "enable",
+        "disable",
+        "verify",
+        "curl",
+        "softcom"
+    ],
+    "homepage": "https://github.com/yabacon/paystack-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zacchaeus Bolaji",
+            "email": "djunehor@gmail.com",
+            "homepage": "https://github.com/djunehor",
+            "role": "Creator"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.3",
+        "scrutinizer/ocular": "^1.1",
+        "squizlabs/php_codesniffer": "^2.3",
+        "vlucas/phpdotenv": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Djunehor\\Eyowo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Djunehor\\Eyowo\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}
