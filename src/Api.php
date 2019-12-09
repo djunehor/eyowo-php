@@ -10,7 +10,8 @@ use Psr\Http\Message\MessageInterface;
 class Api
 {
 
-    private $baseUrl = "https://api.console.eyowo.com/";
+    private $productionBaseUrl = "https://api.console.eyowo.com/";
+    private $sandboxBaseUrl = "https://api.sandbox.developer.eyowo.com/";
     private $appKey;
     private $appSecret;
     public $client;
@@ -34,12 +35,12 @@ class Api
     protected $errorMessage;
     protected $statusCode;
 
-    public function __construct($appKey = null)
+    public function __construct($appKey = null, $production = false)
     {
         $this->appKey = isset($appKey) ? $appKey : getenv('EYOWO_APP_KEY');
 
         $this->client = new Client([
-            'base_uri' => $this->baseUrl,
+            'base_uri' => $production ? $this->productionBaseUrl : $this->sandboxBaseUrl,
             'headers' => [
                 'X-App-Key' => $this->appKey,
                 'Content-Type' => 'application/json',

@@ -29,8 +29,11 @@ A PHP API wrapper for [Eyowo](https://eyowo.com/).
 ```php
 use Djunehor\Eyowo\Api;
 
-$eyowo = new Api($appKey); //if appKey is not passed, package uses value in .env
+$production is an optional boolean parameter to specify if to use production URL or sandbox.
+// Default is false
+$eyowo = new Api($appKey, $production); //if appKey is not passed, package uses value in .env
 ```
+NOTE: The sandbox URL was not responding as at last test. So, you might just set $production as true
 
 #### Validate a user
 ```php
